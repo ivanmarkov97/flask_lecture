@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block all_news %}
+
+<ol>
+    {% for news in all_news %}
+    <li>News date: {{news.news_date}} | TEXT: {{news.news_text}}</li>
+    {% endfor %}
+</ol>
+
+{% endblock %}
